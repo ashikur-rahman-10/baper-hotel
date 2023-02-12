@@ -23,19 +23,47 @@
             <div class="lg:grid grid-cols-3 gap-4 text-white space-y-3 lg:space-y-0">
                 <div class="text-center lg:py-9 py-4 bg-green-400  rounded-xl">
                     <h1 class="text-2xl lg:text-3xl">Deposite</h1>
-                    <h2 class="text-3xl lg:text-5xl">$00</h2>
+                    <h2 class="text-3xl lg:text-5xl">$<span id="deposite-ammount">00</span></h2>
                 </div>
                 <div class="text-center bg-red-400 lg:py-9 py-4 rounded-xl">
                     <h1 class="text-2xl lg:text-3xl">Withdraw</h1>
-                    <h2 class="text-3xl lg:text-5xl">$00</h2>
+                    <h2 class="text-3xl lg:text-5xl">$<span" id="withdraw-ammount">00</span></h2>
                 </div>
                 <div class="text-center bg-violet-400 lg:py-9 py-4 rounded-xl">
                     <h1 class="text-2xl lg:text-3xl">Balance</h1>
-                    <h2 class="text-3xl lg:text-5xl">$1240</h2>
+                    <h2 class="text-3xl lg:text-5xl">$<span id="balance-ammount">1240</span></h2>
                 </div>
 
             </div>
         </section>
+
+
+        <section class="lg:w-3/4 w-11/12 mx-auto mt-16 mb-10">
+            <div class="lg:grid grid-cols-2 gap-4 text-white space-y-3 lg:space-y-0 ">
+
+                <div class=" bg-lime-400 lg:py-9 py-4  rounded-xl">
+                    <h1 class=" mx-10 mx-auto text-2xl lg:text-3xl pb-4">Please deposite here</h1>
+                    <input class="lg:px-3 px-8 py-1 w-3/4  lg:mx-10 mx-auto block rounded-md mb-3 text-black"
+                        type="text" name="" id="deposite-field" placeholder="$ Please enter your deposite ammount">
+                    <button id="deposite-btn"
+                        class="bg-sky-500 hover:bg-sky-300 text-white text-lg font-medium px-8 py-2 mx-10 rounded-lg mb-6">Deposite</button>
+
+                </div>
+                <div class=" bg-pink-300 lg:py-9 py-4  rounded-xl">
+                    <h1 class="mx-10 mx-auto text-2xl lg:text-3xl pb-4">Please Withdraw here</h1>
+                    <input class="lg:px-3 px-8 py-1 w-3/4 lg:mx-10 mx-auto block rounded-md mb-3 text-black" type="text"
+                        name="" id="withdraw-field" placeholder="$ Please enter your Withdraw ammount">
+                    <button id="withdraw-btn"
+                        class="bg-sky-500 hover:bg-sky-300 text-white text-lg font-medium px-8 py-2 mx-10 rounded-lg mb-6">Withdraw</button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <script src="bank.js"></script>
     </main>
 
 </body>
